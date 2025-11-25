@@ -1,5 +1,5 @@
 {
-  "name": "cacheflow",
+  "name": "@cr7bit/cacheflow",
   "version": "1.0.0",
   "description": "Simple and powerful caching for Node.js - Local memory and Redis made easy",
   "type": "module",
@@ -23,7 +23,7 @@
     "memory-cache",
     "simple-cache"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Utsav Rai <utsavrai2115@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",

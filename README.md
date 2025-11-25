@@ -8,11 +8,11 @@
 ## Quick Start
 
 ```bash
-npm install cacheflow
+npm install @cr7bit/cacheflow
 ```
 
 ```javascript
-import { createCache } from 'cacheflow';
+import { createCache } from '@cr7bit/cacheflow';
 
 // Create cache
 const cache = await createCache();
@@ -45,7 +45,7 @@ const user = await cache.getOrFetch('user:123', async () => {
 ## Quick Links
 
 - [GitHub Repository](https://github.com/utsxvrai/Distributed-Cache)
-- [NPM Package](https://www.npmjs.com/package/cacheflow)
+- [NPM Package](https://www.npmjs.com/package/@cr7bit/cacheflow)
 - [Documentation](https://your-docs-url.com)
 - [Issues](https://github.com/utsxvrai/Distributed-Cache/issues)
 
@@ -70,7 +70,7 @@ See [Docker Guide](https://your-docs-url.com/docker) for details.
 
 ## License
 
-MIT © [Your Name](https://github.com/utsxvrai)
+MIT © [Utsav Rai](https://github.com/utsxvrai)
 
 ---
 
