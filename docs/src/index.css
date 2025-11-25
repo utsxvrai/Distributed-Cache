@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-gray-100;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700;
+  }
+  
+  .glass {
+    @apply bg-dark-lighter/50 backdrop-blur-xl border border-primary-900/30;
+  }
+  
+  .code-block {
+    @apply bg-dark-card border border-primary-900/30 rounded-lg p-4 overflow-x-auto;
+  }
+}
+
+/* Syntax highlighting for code */
+code {
+  font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-variant-ligatures: common-ligatures;
+}
+
+code .keyword { @apply text-purple-400 font-medium; }
+code .string { @apply text-green-400; }
+code .number { @apply text-blue-400; }
+code .comment { @apply text-gray-500 italic; }
+code .function { @apply text-yellow-400; }
+code .operator { @apply text-pink-400; }
+code .property { @apply text-cyan-400; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-600;
+}
